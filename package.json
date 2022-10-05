@@ -1,0 +1,15 @@
+{
+  "name": "test-async",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node -v >> log.txt && node async-local-storage.js DeepASL >> log.txt && node async-local-storage.js ASL >> log.txt && echo '----' >> log.txt",
+    "test": "echo '' > log.txt && npm run run && npm run run && npm run run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "benchmark": "^2.1.4"
+  }
+}

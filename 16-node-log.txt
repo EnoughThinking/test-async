@@ -1,0 +1,19 @@
+
+v16.18.0
+DeepASL x 24,795 ops/sec ±3.01% (88 runs sampled)
+DeepWitness x 25,533 ops/sec ±2.30% (81 runs sampled)
+ASL x 41,926 ops/sec ±1.31% (88 runs sampled)
+Witness x 43,733 ops/sec ±0.64% (85 runs sampled)
+----
+v16.18.0
+DeepASL x 22,737 ops/sec ±4.13% (81 runs sampled)
+DeepWitness x 23,877 ops/sec ±3.51% (75 runs sampled)
+ASL x 40,746 ops/sec ±2.22% (85 runs sampled)
+Witness x 44,838 ops/sec ±0.79% (93 runs sampled)
+----
+v16.18.0
+DeepASL x 25,151 ops/sec ±3.62% (85 runs sampled)
+DeepWitness x 25,656 ops/sec ±2.54% (77 runs sampled)
+ASL x 40,558 ops/sec ±2.15% (85 runs sampled)
+Witness x 43,794 ops/sec ±1.21% (91 runs sampled)
+----

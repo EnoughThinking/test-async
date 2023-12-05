@@ -91,6 +91,53 @@ const methods = {
       });
     });
   },
+  DeepWitness: function () {
+    return new Promise((resolve) => {
+      run("witness", async () => {
+        const f = async () => {
+          const f = async () => {
+            const f = async () => {
+              const f = async () => {
+                const f = async () => {
+                  const f = async () => {
+                    const f = async () => {
+                      const f = async () => {
+                        const f = async () => {
+                          const f = async () => {
+                            const f = async () => {
+                              const f = async () => {
+                                const f = async () => {
+                                  await func(json);
+                                };
+                                await f();
+                              };
+                              await f();
+                            };
+                            await f();
+                          };
+                          await f();
+                        };
+                        await f();
+                      };
+                      await f();
+                    };
+                    await f();
+                  };
+                  await f();
+                };
+                await f();
+              };
+              await f();
+            };
+            await f();
+          };
+          await f();
+        };
+        await f();
+        resolve();
+      });
+    });
+  },
   Witness: function () {
     return new Promise((resolve) => {
       run("witness", async () => {
@@ -101,8 +148,7 @@ const methods = {
   },
 };
 
-if (process.argv[2] === "ASL") {
-  writeFileSync("ASL.txt", "");
+if (process.argv[2] === "Normal") {
   suite
     .add("ASL", methods["ASL"])
     .add("Witness", methods["Witness"])
@@ -112,11 +158,10 @@ if (process.argv[2] === "ASL") {
     .run({ async: true });
 }
 
-if (process.argv[2] === "DeepASL") {
-  writeFileSync("DeepASL.txt", "");
+if (process.argv[2] === "Deep") {
   suite
     .add("DeepASL", methods["DeepASL"])
-    .add("Witness", methods["Witness"])
+    .add("DeepWitness", methods["DeepWitness"])
     .on("cycle", function (event) {
       console.log(String(event.target));
     })
